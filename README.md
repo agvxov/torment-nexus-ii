@@ -9,6 +9,9 @@ This was produced for a small, closed-circle gamejam.
 
 ![screenshot-2](screenshot-2.png)
 
+This was my first time using an ECS.
+Apparently, I really like ECSs.
+
 ### Idea
 
 Top-down stalker zone simulator.
