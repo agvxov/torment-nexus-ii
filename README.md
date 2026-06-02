@@ -3,6 +3,12 @@
 > Flesh Idle MMOs;
 > The machine must grow. It demands more flesh.
 
+This was produced for a small, closed-circle gamejam.
+
+![screenshot-1](screenshot-1.png)
+
+![screenshot-2](screenshot-2.png)
+
 ### Idea
 
 Top-down stalker zone simulator.
