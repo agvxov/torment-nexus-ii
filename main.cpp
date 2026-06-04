@@ -114,7 +114,7 @@ int n_radareas = 0;
 unsigned long long radarea_price[] = {20};
 
 int n_gravtraps = 0;
-unsigned long long gravtrap_price[] = {88};
+unsigned long long gravtrap_price[] = {50};
 
 
 struct librarian_movement_t {
@@ -340,6 +340,11 @@ void move_librarian(entt::entity l) {
     const int avg_direction_change_tick_duration = 90;
 
     if (m.prey != entt::null) {
+        if (not entities.valid(m.prey)) {
+            m.prey = entt::null;
+            return;
+        }
+
         auto p_hb = entities.get<hitbox_t>(m.prey);
         if (fabs(p_hb.x - hb.x) < 8.0f
         &&  fabs(p_hb.y - hb.y) < 8.0f) {
